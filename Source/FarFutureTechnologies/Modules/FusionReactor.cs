@@ -486,7 +486,7 @@ namespace FarFutureTechnologies
           modes[currentModeIndex].powerGeneration * TimeWarp.fixedDeltaTime);
 
 
-        Debug.Log($"L1: {requestedFramePower}, {shipEC}, {shipMaxEC} {clampedFramePower}");
+        //Debug.Log($"L1: {requestedFramePower}, {shipEC}, {shipMaxEC} {clampedFramePower}");
 
 
 
@@ -497,7 +497,7 @@ namespace FarFutureTechnologies
         powerGenerated = modes[currentModeIndex].powerGeneration * reactorThrottle;
         fuelConsumption = 0d;
 
-        Debug.Log($"L2: {reactorThrottle}, {powerGenerated}, {modes[currentModeIndex].powerGeneration}, {TimeWarp.fixedDeltaTime}");
+        //Debug.Log($"L2: {reactorThrottle}, {powerGenerated}, {modes[currentModeIndex].powerGeneration}, {TimeWarp.fixedDeltaTime}");
 
         bool fuelCheckPassed = true;
         for (int i = 0; i < modes[currentModeIndex].inputs.Count; i++)
